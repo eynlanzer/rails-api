@@ -24,10 +24,10 @@ PostgreSQL 10.8
 ## Setup
 
 Instale o Postman (https://www.getpostman.com/). 
-Dentro do Terminal, inicialize o servidor com o commando <strong>rails s</strong>
+Dentro do Terminal, use o comando <strong>bundle install</strong> e inicialize o servidor com o commando <strong>rails s</strong>
 
 > Install Postman.
-> Start the server while inside the terminal with rails s command.
+> Use the bundle install command and start the server while inside the terminal with rails s command.
 
 ### Postman Setup
 
