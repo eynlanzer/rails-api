@@ -13,4 +13,9 @@ class PremisePolicy < ApplicationPolicy
     record.user == user
     # Only premise owners can update them
   end
+
+  def create?
+    !user.nil?
+    # Any logged in user can create a premise
+  end
 end

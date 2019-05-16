@@ -10,6 +10,14 @@ class Api::V1::PremisesController < Api::V1::BaseController
   def show
   end
 
+  def update
+    if @premise.update(premise_params)
+      render :show
+    else
+      render_error
+    end
+  end
+
   def create
     @premise = Premise.new(premise_params)
     @premise.user = current_user
@@ -20,15 +28,7 @@ class Api::V1::PremisesController < Api::V1::BaseController
       render_error
     end
   end
-
-  def update
-    if @premise.update(premise_params)
-      render :show
-    else
-      render_error
-    end
-  end
-
+  
   def destroy
     @premise.destroy
     head :no_content
