@@ -18,4 +18,9 @@ class PremisePolicy < ApplicationPolicy
     !user.nil?
     # Any logged in user can create a premise
   end
+
+  def destroy?
+    update?
+    # Only premise owners can delete them
+  end
 end

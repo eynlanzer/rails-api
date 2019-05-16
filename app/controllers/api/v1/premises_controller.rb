@@ -28,7 +28,7 @@ class Api::V1::PremisesController < Api::V1::BaseController
       render_error
     end
   end
-  
+
   def destroy
     @premise.destroy
     head :no_content
