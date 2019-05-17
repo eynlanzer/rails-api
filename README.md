@@ -23,13 +23,18 @@ PostgreSQL 10.8
 
 ## Setup
 
-Instale o Postman (https://www.getpostman.com/). 
-Dentro do Terminal, use o comando <strong>bundle install</strong> e inicialize o servidor com o commando <strong>rails s</strong>
+### Terminal Setup
 
-> Install Postman.
-> Use the bundle install command and start the server while inside the terminal with rails s command.
+```sh
+bundle install
+rails db:migrate
+rails s
+```
 
 ### Postman Setup
+
+Instale o Postman aqui: https://www.getpostman.com/). 
+> Install Postman here.
 
 Localhost URL
 
@@ -54,8 +59,8 @@ Value: bBwV-FTkkHUgmjSnaaTW
 GET    /api/v1/premises      (index)
 GET    /api/v1/premises/:id  (show)
 POST   /api/v1/premises      (create)
-PATCH   /api/v1/premises/:id (update)
-DELETE  /api/v1/premises/:id (delete)
+PATCH  /api/v1/premises/:id (update)
+DELETE /api/v1/premises/:id (delete)
 ```
 
 ### Create / Update
