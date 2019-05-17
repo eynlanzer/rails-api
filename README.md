@@ -2,7 +2,7 @@
 
 Esse projeto é uma REST API com Ruby on Rails que permite criar Locais e Estações.
 
-> This is a Ruby on Rails REST API that allows you to create Premises ans Stations.
+> This is a Ruby on Rails REST API that allows you to create Premises and Stations.
 
 ## Contato
 
@@ -33,7 +33,7 @@ rails s
 
 ### Postman Setup
 
-Instale o Postman aqui: https://www.getpostman.com/). 
+Instale o Postman aqui: https://www.getpostman.com/. 
 > Install Postman here.
 
 Localhost URL
